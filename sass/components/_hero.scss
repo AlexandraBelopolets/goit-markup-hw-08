@@ -1,0 +1,60 @@
+.hero {
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 118px 0px;
+  text-align: center;
+
+  background-color: $hero-bckgrnd;
+  background-image: $gradient, url(../images/hero/hero-small@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-resolution: 2dppx),
+    screen and (min-resolution: 192dpi),
+    screen and (min-device-pixel-ratio: 2) {
+    background-image: $gradient, url(../images/hero/hero-small@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: $gradient, url(../images/hero/hero-medium@1x.jpg);
+    @media screen and (min-resolution: 2dppx),
+      screen and (min-resolution: 192dpi),
+      screen and (min-device-pixel-ratio: 2) {
+      background-image: $gradient, url(../images/hero/hero-medium@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding: 200px 0px;
+
+    background-image: $gradient, url(../images/hero/hero-large@1x.jpg);
+    @media screen and (min-resolution: 2dppx),
+      screen and (min-resolution: 192dpi),
+      screen and (min-device-pixel-ratio: 2) {
+      background-image: $gradient, url(../images/hero/hero-large@2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  color: $footer-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

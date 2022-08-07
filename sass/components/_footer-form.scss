@@ -1,0 +1,51 @@
+.footer__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__input-wrap {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.button__icon {
+  margin-left: 10px;
+}
+
+.footer__input {
+  padding: 0px 16px;
+  margin: 0px 0px 20px 0px;
+
+  // @media screen and (min-width: 450px) {
+  //   // width: 450px;
+  // }
+  @media screen and (min-width: 767px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0px 12px 0px 0px;
+    width: 358px;
+  }
+
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: inherit;
+  color: $footer-color;
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &:focus {
+    border: 1px solid $footer-color;
+    outline-width: 0px;
+  }
+}
